@@ -1,0 +1,117 @@
+body{
+	margin: 0;
+}
+.hat{
+	background: black;
+	display: flex;
+	justify-content: space-between;
+	padding-left: 250px;
+	padding-right: 250px;
+	padding-top: 15px;
+	padding-bottom: 15px;  
+}
+.hat a{
+	color: white;
+	font-size: 22px;
+	text-decoration: none;
+	transition: 0.5s;
+}
+.hat a:nth-child(1):hover{
+	color: lime;
+}
+.hat a:nth-child(2):hover{
+	color: orange;
+}
+.hat a:nth-child(3):hover{
+	color: yellow;
+}
+.hat a:nth-child(4):hover{
+	color: greenyellow;
+}
+.promo{
+	height: 700px;
+	animation: move 20s infinite linear;
+}
+.apples{
+	background: url(img/apples.jpg);
+	background-size: cover;
+	background-position: 50% 50%;
+}
+.oranges{
+	background: url(img/oranges.jpg);
+	background-size: cover;
+	background-position: 50% 50%;
+}
+.bananas{
+	background: url(img/bananas.jpg);
+	background-size: cover;
+	background-position: 50% 50%;
+}
+.pears{
+	background: url(img/pears.jpg);
+	background-size: cover;
+	background-position: 50% 50%;
+}
+.info{
+	padding-left: 250px;
+	padding-right: 250px;
+}
+.info h1{
+	font-size: 46px;
+	text-align: center;
+	/*animation: move 2s 10;*/
+}
+.info p{
+	font-size: 22px;
+	text-align: justify;
+}
+.footer{
+	background: black;
+	padding-bottom: 50px;
+	padding-top: 50px;
+}
+.footer h2{
+	color: white;
+	text-align: center;
+}
+
+
+
+
+
+@keyframes move{
+	0%{
+		background-position: 50% 0%;
+	}
+
+	50%{
+		background-position: 50% 100%;
+	}
+
+	100%{
+		background-position: 50% 0%;
+	}
+
+}
+
+@media (max-width: 1200px){
+	.hat{
+		width: 100%;
+		padding: 0;
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+	}
+	.hat a{
+		margin: 5px 0;
+		font-size: 30px;
+	}
+	.promo{
+		height: 300px;
+	}
+	.info{
+		padding: 10px 20px; 
+	}
+}
+
+
