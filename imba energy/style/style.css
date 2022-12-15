@@ -1,0 +1,266 @@
+*{
+	font-family: sans-serif;
+	margin: 0;
+	text-decoration: none;
+	color: rgb(25,25,25);
+	box-sizing: border-box;
+}
+h2{
+	text-align: center;
+	text-transform: uppercase;
+}
+.hat{
+	padding: 10px 200px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	box-shadow: 0px 0px 10px purple;
+	animation: light 6s infinite linear;
+}
+.hat_logo{
+	height: 40px;
+}
+.hat_links{
+	display: flex;
+	justify-content: space-between;
+	width: 60%;
+
+}
+.hat_links a{
+	transition: 0.3s;
+}
+.hat_links a:hover{
+	color: red;
+}
+
+.hat_cont{
+	display: flex;
+	justify-content: space-between;
+	width: 80px;
+}
+.hat_cont a img{
+	height: 30px;
+}
+.hat img{	
+	transition: 0.3s;
+}
+.hat img:hover{
+	transform: scale(1.15);
+}
+.promo{
+	height: 580px;
+	background-image: url(img/bg_prev.jpg);
+	background-size: cover;
+	background-position: 50% 50%;
+}
+.promo a{
+	display: block; /*inline    inline-block*/
+	height: 100%;
+	width: 100%;
+}
+
+.promo_box{
+	height: 150px;
+	background-image: url(img/bg_prev2.jpg);
+	background-size: cover;
+	background-position: 50% 50%;
+}
+.rec{
+	padding: 50px 200px;
+}
+.rec_box{
+	display: flex;
+	justify-content: space-between;
+	margin-top: 30px;
+}
+.rec_box_item{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.rec_box_item button{
+	transition: 0.3s;
+}
+.rec_box_item button:hover{
+	transform: scale(1.1);
+}
+.rec_box_bcard{
+	width: 260px;
+	background: white;
+	text-align: center;
+	padding: 30px 20px;
+	border: 2px solid lightgray;
+}
+.rec_box_bcard img{
+	height: 200px;
+}
+.rec_box_bcard h3{
+	text-transform: uppercase;
+	margin-top: 30px;
+}
+.rec_box_bcard .no_price{
+	text-decoration: line-through;
+	color: gray;
+	font-size: 20px;
+	margin: 20px;
+}
+.rec_box_bcard .price{
+	color: red;
+	font-size: 25px;
+	margin: 20px;
+	font-weight: 700;
+}
+.rec_box_bcard button{
+	background: #01cc65;
+	color: white;
+	padding: 10px 40px;
+	border: none;
+	text-transform: uppercase;
+	cursor: pointer;
+}
+/*-----*/
+.rec_box_lcard{
+	width: 180px;
+	padding: 15px 10px;
+	background: white;
+	text-align: center;
+	border: 2px solid lightgray;
+}
+.rec_box_lcard:nth-child(3){
+	margin-top: 15px;
+}
+.rec_box_lcard:nth-child(4){
+	margin-top: 15px;
+}
+.rec_box_lcard img{
+	height: 90px;
+}
+.rec_box_lcard h3{
+	text-transform: uppercase;
+	margin-top: 15px;
+	font-size: 12px;
+}
+.rec_box_lcard .no_price{
+	text-decoration: line-through;
+	color: gray;
+	font-size: 12px;
+	margin-top: 10px;
+}
+.rec_box_lcard .price{
+	color: red;
+	font-size: 16px;
+	margin-top: 10px;
+	font-weight: 700;
+}
+.rec_box_lcard button{
+	background: #01cc65;
+	color: white;
+	padding: 7px 30px;
+	border: none;
+	text-transform: uppercase;
+	font-size: 14px;
+	margin-top: 10px;
+	cursor: pointer;
+}
+.big{
+	width: 54%;
+}
+.little{
+	width: 38%;
+}
+.rec_all{
+	display: block;
+	margin: auto;
+	background-color: white;
+	color: #01cc65;
+	border: 2px solid #01cc65;
+	padding: 10px 40px;
+	text-transform: uppercase;
+	font-weight: 700;
+	margin-top: 30px;
+	cursor: pointer;
+	transition: 0.3s;
+}
+.rec_all:hover{
+	background: #01cc65;
+	color: white;
+}
+.smi{
+	padding: 50px 200px;
+}
+.smi h2{
+	margin-bottom: 30px;
+}
+.smi_box{
+	display: flex;
+	justify-content: space-between;
+}
+.smi_box_item{
+	background-color: white;
+	background-repeat: no-repeat;
+	background-size: 50%;
+	background-position: 50% 50%;
+	width: 400px;
+	height: 200px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	padding: 0px 20px;
+	font-size: 20px;
+	border:2px solid white;
+	transition: 0.3s;
+	color: rgba(0,0,0,0);
+}
+.smi_box_item:hover{
+	border:2px solid red;
+	border-radius: 10px;
+	box-shadow: 0 0 10px red;
+	color: black;
+	background-position: 50% 0%;
+}
+.item_mania{
+	background-image: url(img/mania.png);
+}
+.item_champion{
+	background-image: url(img/champion.jpg);
+}
+.item_progemer{
+	background-image: url(img/progamer.png);
+}
+.item_sostav{
+	background-image: url(img/sostav.png);
+}
+.item_gameru{
+	background-image: url(img/gameru.png);
+}
+.item_squad{
+	background-image: url(img/squad.jpg);
+}
+.footer{
+	padding: 50px 200px;
+	background: #000;
+	color: white;
+	text-align: center;
+}
+/*анимация*/
+@keyframes light{
+	0%{
+		box-shadow: 0px 0px 10px purple;
+	}
+	25%{
+		box-shadow: 0px 0px 10px red;
+	}
+	50%{
+		box-shadow: 0px 0px 10px lime;
+	}
+	75%{
+		box-shadow: 0px 0px 10px yellow;
+	}
+	100%{
+		box-shadow: 0px 0px 10px purple;
+	}
+
+
+
+}
